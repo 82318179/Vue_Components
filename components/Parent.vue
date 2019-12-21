@@ -1,7 +1,8 @@
 <template>
   <div class="Parent">
-    Parent:{{money}}
-    <son1 :value="money" @input:value="(value)=>money =value"></son1>
+    Parent:{{money}}--{{ary}}
+    <son1 :value="money" :ary="ary" @input="(value)=>money =value"></son1>
+    <!-- <son1 v-model="money"></son1> -->
   </div>
 </template>
 
@@ -10,7 +11,8 @@ import son1 from "./son1.vue";
 export default {
   data() {
     return {
-      money: 100
+      money: 100,
+      ary: [1]
     };
   },
   components: {

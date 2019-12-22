@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.$listeners.son(); //触发绑定的son方法
+  }
+};
 </script>
 
 <style scoped>

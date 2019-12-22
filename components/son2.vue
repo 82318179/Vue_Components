@@ -13,7 +13,6 @@ export default {
   },
   mounted() {
     console.log(this.$listeners); //输出所有绑定的方法
-    
   },
   inheritAttrs: false
 };

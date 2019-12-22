@@ -12,6 +12,11 @@
 import son1 from "./son1.vue";
 import son2 from "./son2.vue";
 export default {
+  provide() {
+    return {
+      parent: this
+    };
+  },
   data() {
     return {
       money: 100,

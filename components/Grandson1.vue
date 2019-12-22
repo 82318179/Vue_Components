@@ -22,6 +22,11 @@ export default {
     say() {
       this.$emit("say");
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$bus.$emit("有人联系我");
+    });
   }
 };
 </script>

@@ -3,11 +3,14 @@
     Parent:{{money}}--{{ary}}
     <son1 :value="money" :ary="ary" @input="(value)=>money =value"></son1>
     <!-- <son1 v-model="money"></son1> -->
+
+    <son2 name="abc" age="10" address="大重庆"></son2>
   </div>
 </template>
 
 <script>
 import son1 from "./son1.vue";
+import son2 from "./son2.vue";
 export default {
   data() {
     return {
@@ -16,7 +19,8 @@ export default {
     };
   },
   components: {
-    son1
+    son1,
+    son2
   }
 };
 </script>
